@@ -56,13 +56,13 @@ print>>time.ctime()
 
 #### 1. تعریف متغیر:
 
-```pipton
+```kod
 var x = 5
 ```
 
 #### 2. حلقه‌ها:
 
-```pipton
+```kod
 while x < 10 {
     print>>x
     x = x + 1
@@ -75,8 +75,8 @@ for i in range(0, 5) {
 
 #### 3. تابع:
 
-```pipton
-fun hello(name) {
+```kod
+fan hello(name) {
     print>>"Hello " + name
 }
 hello("Amir")
@@ -84,7 +84,7 @@ hello("Amir")
 
 #### 4. کلاس:
 
-```pipton
+```kod
 class A {
     def __init__(self) {
         print>>"Init"
@@ -94,19 +94,19 @@ class A {
 
 #### 5. دریافت ورودی:
 
-```pipton
+```kod
 var name = entry("Your name: ")
 ```
 
 #### 6. چاپ خروجی:
 
-```pipton
+```kod
 print>>"Welcome to Pipton!"
 ```
 
 #### 7. وارد کردن کتابخانه‌های پایتون:
 
-```pipton
+```kod
 import math
 print>>math.sqrt(25)
 ```
@@ -132,7 +132,7 @@ Pipton is a lightweight interpreted language designed for simplicity and readabi
 
 ### 📌 Syntax Highlights:
 
-```pipton
+```kod
 var name = entry("Your name: ")
 print>>"Hello " + name
 
@@ -146,13 +146,13 @@ for i in range(0, 3) {
     print>>i
 }
 
-fun greet(n) {
+fan greet(n) {
     print>>"Hi " + n
 }
 greet("Pipton")
 
 class A {
-    fun __init__(self) {
+    def __init__(self) {
         print>>"Class initialized"
     }
 }
@@ -174,7 +174,7 @@ pip install .
 2. Run a file:
 
 ```bash
-pipton examples/test.pipton
+pipton examples/test.kod
 ```
 
 

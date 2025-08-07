@@ -1,0 +1,9 @@
+var name = entry("Your name: ")
+print>>"Hello " + name
+
+var x = 10
+while x < 13 {
+    print>>x
+    x = x + 1
+}
+
