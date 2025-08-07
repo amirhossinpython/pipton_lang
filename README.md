@@ -76,7 +76,7 @@ for i in range(0, 5) {
 #### 3. تابع:
 
 ```pipton
-fan hello(name) {
+fun hello(name) {
     print>>"Hello " + name
 }
 hello("Amir")
@@ -146,13 +146,13 @@ for i in range(0, 3) {
     print>>i
 }
 
-fan greet(n) {
+fun greet(n) {
     print>>"Hi " + n
 }
 greet("Pipton")
 
 class A {
-    def __init__(self) {
+    fun __init__(self) {
         print>>"Class initialized"
     }
 }
@@ -174,7 +174,7 @@ pip install .
 2. Run a file:
 
 ```bash
-pipton examples/test.kod
+pipton examples/test.pipton
 ```
 
 
