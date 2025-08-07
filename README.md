@@ -174,8 +174,9 @@ pip install .
 2. Run a file:
 
 ```bash
-pipton examples/test.kod
+pipton examples/test.pipton
 ```
+
 
 
 
