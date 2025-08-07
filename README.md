@@ -21,7 +21,7 @@ Pipton یک زبان برنامه‌نویسی تفسیری (Interpreter Based) 
 
 ### 📌 ساختار دستورات زبان Pipton:
 
-```kod
+```pipton
 var name = entry("نام شما: ")
 print>>"سلام " + name
 
@@ -35,7 +35,7 @@ for i in range(0, 3) {
     print>>i
 }
 
-fan greet(n) {
+fun greet(n) {
     print>>"سلام " + n
 }
 greet("پایتون")
@@ -56,13 +56,13 @@ print>>time.ctime()
 
 #### 1. تعریف متغیر:
 
-```kod
+```pipton
 var x = 5
 ```
 
 #### 2. حلقه‌ها:
 
-```kod
+```pipton
 while x < 10 {
     print>>x
     x = x + 1
@@ -75,7 +75,7 @@ for i in range(0, 5) {
 
 #### 3. تابع:
 
-```kod
+```pipton
 fan hello(name) {
     print>>"Hello " + name
 }
@@ -84,7 +84,7 @@ hello("Amir")
 
 #### 4. کلاس:
 
-```kod
+```pipton
 class A {
     def __init__(self) {
         print>>"Init"
@@ -94,7 +94,7 @@ class A {
 
 #### 5. دریافت ورودی:
 
-```kod
+```pipton
 var name = entry("Your name: ")
 ```
 
@@ -106,7 +106,7 @@ print>>"Welcome to Pipton!"
 
 #### 7. وارد کردن کتابخانه‌های پایتون:
 
-```kod
+```pipton
 import math
 print>>math.sqrt(25)
 ```
@@ -132,7 +132,7 @@ Pipton is a lightweight interpreted language designed for simplicity and readabi
 
 ### 📌 Syntax Highlights:
 
-```kod
+```pipton
 var name = entry("Your name: ")
 print>>"Hello " + name
 
@@ -146,7 +146,7 @@ for i in range(0, 3) {
     print>>i
 }
 
-fan greet(n) {
+fun greet(n) {
     print>>"Hi " + n
 }
 greet("Pipton")
@@ -176,6 +176,7 @@ pip install .
 ```bash
 pipton examples/test.kod
 ```
+
 
 
 
