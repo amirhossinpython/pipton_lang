@@ -76,7 +76,7 @@ for i in range(0, 5) {
 #### 3. تابع:
 
 ```pipton
-fan hello(name) {
+fun hello(name) {
     print>>"Hello " + name
 }
 hello("Amir")
@@ -176,6 +176,7 @@ pip install .
 ```bash
 pipton examples/test.kod
 ```
+
 
 
 
