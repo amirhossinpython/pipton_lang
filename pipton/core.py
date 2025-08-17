@@ -9,7 +9,7 @@ def preprocess_braces(code):
     return code
 
 def translate(code):
-    code = preprocess_braces(code)  # ✅ پیش‌پردازش برای مدیریت {} چسبیده
+    code = preprocess_braces(code)  
     lines = code.split('\n')
     output = []
     indent = 0
@@ -51,7 +51,9 @@ def translate(code):
         if stripped.endswith('{'):
             stmt = stripped[:-1].strip()
 
-            if stmt.startswith('fun '):
+            if stmt.startswith('async fun '):
+                stmt = 'async def ' + stmt[10:].strip()
+            elif stmt.startswith('fun '):
                 stmt = 'def ' + stmt[4:].strip()
             elif stmt.startswith('class '):
                 stmt = stmt
